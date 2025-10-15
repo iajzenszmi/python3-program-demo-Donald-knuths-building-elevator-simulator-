@@ -1,0 +1,781 @@
+~ $ python3 elev1.py
+[t=0000] REQ#1 arrives at floor 2 → 9 (UP)
+[t=0000] IDLE→UP; heading toward floor 2
+[t=0000] Move 1 → 2 (UP)
+[t=0001] REQ#2 arrives at floor 9 → 10 (UP)
+[t=0001] Boarded at floor 2: #1 (dir UP)
+[t=0002] REQ#3 arrives at floor 4 → 8 (UP)
+[t=0002] Doors open at floor 2 (dwell 1 left)
+[t=0003] REQ#4 arrives at floor 7 → 6 (DOWN)
+[t=0003] Doors open at floor 2 (dwell 0 left)
+[t=0004] Move 2 → 3 (UP)
+[t=0005] Move 3 → 4 (UP)
+[t=0006] Boarded at floor 4: #3 (dir UP)
+[t=0007] Doors open at floor 4 (dwell 1 left)
+[t=0008] Doors open at floor 4 (dwell 0 left)
+[t=0009] Move 4 → 5 (UP)
+[t=0010] Move 5 → 6 (UP)
+[t=0011] Move 6 → 7 (UP)
+[t=0012] Move 7 → 8 (UP)
+[t=0013] Drop-off complete at floor 8 for #3
+[t=0014] Doors open at floor 8 (dwell 1 left)
+[t=0015] Doors open at floor 8 (dwell 0 left)
+[t=0016] Move 8 → 9 (UP)
+[t=0017] Drop-off complete at floor 9 for #1
+[t=0017] Boarded at floor 9: #2 (dir UP)
+[t=0018] Doors open at floor 9 (dwell 1 left)
+[t=0019] Doors open at floor 9 (dwell 0 left)
+[t=0020] Move 9 → 10 (UP)
+[t=0021] Drop-off complete at floor 10 for #2
+[t=0022] Doors open at floor 10 (dwell 1 left)
+[t=0023] Doors open at floor 10 (dwell 0 left)
+[t=0024] Reverse direction → DOWN
+[t=0024] Move 10 → 9 (DOWN)
+[t=0025] REQ#5 arrives at floor 5 → 9 (UP)
+[t=0025] Move 9 → 8 (DOWN)
+[t=0026] Move 8 → 7 (DOWN)
+[t=0027] Boarded at floor 7: #4 (dir DOWN)
+[t=0028] Doors open at floor 7 (dwell 1 left)
+[t=0029] Doors open at floor 7 (dwell 0 left)
+[t=0030] Move 7 → 6 (DOWN)
+[t=0031] Drop-off complete at floor 6 for #4
+[t=0032] Doors open at floor 6 (dwell 1 left)
+[t=0033] Doors open at floor 6 (dwell 0 left)
+[t=0034] Reverse direction → UP
+[t=0034] Move 6 → 7 (UP)
+[t=0035] Reverse direction → DOWN
+[t=0035] Move 7 → 6 (DOWN)
+[t=0036] Reverse direction → UP
+[t=0036] Move 6 → 7 (UP)
+[t=0037] REQ#6 arrives at floor 1 → 4 (UP)
+[t=0037] REQ#7 arrives at floor 2 → 1 (DOWN)
+[t=0037] Reverse direction → DOWN
+[t=0037] Move 7 → 6 (DOWN)
+[t=0038] Move 6 → 5 (DOWN)
+[t=0039] Move 5 → 4 (DOWN)
+[t=0040] Move 4 → 3 (DOWN)
+[t=0041] Move 3 → 2 (DOWN)
+[t=0042] Boarded at floor 2: #7 (dir DOWN)
+[t=0043] Doors open at floor 2 (dwell 1 left)
+[t=0044] Doors open at floor 2 (dwell 0 left)
+[t=0045] Move 2 → 1 (DOWN)
+[t=0046] Drop-off complete at floor 1 for #7
+[t=0047] Doors open at floor 1 (dwell 1 left)
+[t=0048] Doors open at floor 1 (dwell 0 left)
+[t=0049] Reverse direction → UP
+[t=0049] Move 1 → 2 (UP)
+[t=0050] Move 2 → 3 (UP)
+[t=0051] Move 3 → 4 (UP)
+[t=0052] Move 4 → 5 (UP)
+[t=0053] Boarded at floor 5: #5 (dir UP)
+[t=0054] Doors open at floor 5 (dwell 1 left)
+[t=0055] Doors open at floor 5 (dwell 0 left)
+[t=0056] Move 5 → 6 (UP)
+[t=0057] Move 6 → 7 (UP)
+[t=0058] Move 7 → 8 (UP)
+[t=0059] Move 8 → 9 (UP)
+[t=0060] Drop-off complete at floor 9 for #5
+[t=0061] Doors open at floor 9 (dwell 1 left)
+[t=0062] Doors open at floor 9 (dwell 0 left)
+[t=0063] Reverse direction → DOWN
+[t=0063] Move 9 → 8 (DOWN)
+[t=0064] REQ#8 arrives at floor 2 → 3 (UP)
+[t=0064] Reverse direction → UP
+[t=0064] Move 8 → 9 (UP)
+[t=0065] Reverse direction → DOWN
+[t=0065] Move 9 → 8 (DOWN)
+[t=0066] Reverse direction → UP
+[t=0066] Move 8 → 9 (UP)
+[t=0067] Reverse direction → DOWN
+[t=0067] Move 9 → 8 (DOWN)
+[t=0068] Reverse direction → UP
+[t=0068] Move 8 → 9 (UP)
+[t=0069] Reverse direction → DOWN
+[t=0069] Move 9 → 8 (DOWN)
+[t=0070] Reverse direction → UP
+[t=0070] Move 8 → 9 (UP)
+[t=0071] REQ#9 arrives at floor 6 → 10 (UP)
+[t=0071] Reverse direction → DOWN
+[t=0071] Move 9 → 8 (DOWN)
+[t=0072] Reverse direction → UP
+[t=0072] Move 8 → 9 (UP)
+[t=0073] Reverse direction → DOWN
+[t=0073] Move 9 → 8 (DOWN)
+[t=0074] Reverse direction → UP
+[t=0074] Move 8 → 9 (UP)
+[t=0075] Reverse direction → DOWN
+[t=0075] Move 9 → 8 (DOWN)
+[t=0076] Reverse direction → UP
+[t=0076] Move 8 → 9 (UP)
+[t=0077] Reverse direction → DOWN
+[t=0077] Move 9 → 8 (DOWN)
+[t=0078] Reverse direction → UP
+[t=0078] Move 8 → 9 (UP)
+[t=0079] Reverse direction → DOWN
+[t=0079] Move 9 → 8 (DOWN)
+[t=0080] Reverse direction → UP
+[t=0080] Move 8 → 9 (UP)
+[t=0081] Reverse direction → DOWN
+[t=0081] Move 9 → 8 (DOWN)
+[t=0082] Reverse direction → UP
+[t=0082] Move 8 → 9 (UP)
+[t=0083] Reverse direction → DOWN
+[t=0083] Move 9 → 8 (DOWN)
+[t=0084] REQ#10 arrives at floor 10 → 5 (DOWN)
+[t=0084] Reverse direction → UP
+[t=0084] Move 8 → 9 (UP)
+[t=0085] Reverse direction → DOWN
+[t=0085] Move 9 → 8 (DOWN)
+[t=0086] Reverse direction → UP
+[t=0086] Move 8 → 9 (UP)
+[t=0087] Reverse direction → DOWN
+[t=0087] Move 9 → 8 (DOWN)
+[t=0088] Reverse direction → UP
+[t=0088] Move 8 → 9 (UP)
+[t=0089] Reverse direction → DOWN
+[t=0089] Move 9 → 8 (DOWN)
+[t=0090] Reverse direction → UP
+[t=0090] Move 8 → 9 (UP)
+[t=0091] Reverse direction → DOWN
+[t=0091] Move 9 → 8 (DOWN)
+[t=0092] Reverse direction → UP
+[t=0092] Move 8 → 9 (UP)
+[t=0093] Reverse direction → DOWN
+[t=0093] Move 9 → 8 (DOWN)
+[t=0094] Reverse direction → UP
+[t=0094] Move 8 → 9 (UP)
+[t=0095] Reverse direction → DOWN
+[t=0095] Move 9 → 8 (DOWN)
+[t=0096] Reverse direction → UP
+[t=0096] Move 8 → 9 (UP)
+[t=0097] Reverse direction → DOWN
+[t=0097] Move 9 → 8 (DOWN)
+[t=0098] Reverse direction → UP
+[t=0098] Move 8 → 9 (UP)
+[t=0099] Reverse direction → DOWN
+[t=0099] Move 9 → 8 (DOWN)
+[t=0100] Reverse direction → UP
+[t=0100] Move 8 → 9 (UP)
+[t=0101] Reverse direction → DOWN
+[t=0101] Move 9 → 8 (DOWN)
+[t=0102] Reverse direction → UP
+[t=0102] Move 8 → 9 (UP)
+[t=0103] Reverse direction → DOWN
+[t=0103] Move 9 → 8 (DOWN)
+[t=0104] Reverse direction → UP
+[t=0104] Move 8 → 9 (UP)
+[t=0105] Reverse direction → DOWN
+[t=0105] Move 9 → 8 (DOWN)
+[t=0106] Reverse direction → UP
+[t=0106] Move 8 → 9 (UP)
+[t=0107] Reverse direction → DOWN
+[t=0107] Move 9 → 8 (DOWN)
+[t=0108] Reverse direction → UP
+[t=0108] Move 8 → 9 (UP)
+[t=0109] Reverse direction → DOWN
+[t=0109] Move 9 → 8 (DOWN)
+[t=0110] Reverse direction → UP
+[t=0110] Move 8 → 9 (UP)
+[t=0111] Reverse direction → DOWN
+[t=0111] Move 9 → 8 (DOWN)
+[t=0112] Reverse direction → UP
+[t=0112] Move 8 → 9 (UP)
+[t=0113] Reverse direction → DOWN
+[t=0113] Move 9 → 8 (DOWN)
+[t=0114] Reverse direction → UP
+[t=0114] Move 8 → 9 (UP)
+[t=0115] REQ#11 arrives at floor 6 → 5 (DOWN)
+[t=0115] Reverse direction → DOWN
+[t=0115] Move 9 → 8 (DOWN)
+[t=0116] Move 8 → 7 (DOWN)
+[t=0117] Move 7 → 6 (DOWN)
+[t=0118] REQ#12 arrives at floor 7 → 3 (DOWN)
+[t=0118] Boarded at floor 6: #11 (dir DOWN)
+[t=0119] Doors open at floor 6 (dwell 1 left)
+[t=0120] Doors open at floor 6 (dwell 0 left)
+[t=0121] Move 6 → 5 (DOWN)
+[t=0122] Drop-off complete at floor 5 for #11
+[t=0123] Doors open at floor 5 (dwell 1 left)
+[t=0124] Doors open at floor 5 (dwell 0 left)
+[t=0125] Reverse direction → UP
+[t=0125] Move 5 → 6 (UP)
+[t=0126] REQ#13 arrives at floor 4 → 3 (DOWN)
+[t=0126] Boarded at floor 6: #9 (dir UP)
+[t=0127] Doors open at floor 6 (dwell 1 left)
+[t=0128] Doors open at floor 6 (dwell 0 left)
+[t=0129] Move 6 → 7 (UP)
+[t=0130] Move 7 → 8 (UP)
+[t=0131] Move 8 → 9 (UP)
+[t=0132] Move 9 → 10 (UP)
+[t=0133] Drop-off complete at floor 10 for #9
+[t=0134] Doors open at floor 10 (dwell 1 left)
+[t=0135] REQ#14 arrives at floor 7 → 6 (DOWN)
+[t=0135] Doors open at floor 10 (dwell 0 left)
+[t=0136] Reverse direction → DOWN
+[t=0136] Move 10 → 9 (DOWN)
+[t=0137] Move 9 → 8 (DOWN)
+[t=0138] Move 8 → 7 (DOWN)
+[t=0139] Boarded at floor 7: #12,#14 (dir DOWN)
+[t=0140] Doors open at floor 7 (dwell 1 left)
+[t=0141] REQ#15 arrives at floor 4 → 6 (UP)
+[t=0141] Doors open at floor 7 (dwell 0 left)
+[t=0142] Move 7 → 6 (DOWN)
+[t=0143] REQ#16 arrives at floor 7 → 8 (UP)
+[t=0143] Drop-off complete at floor 6 for #14
+[t=0144] Doors open at floor 6 (dwell 1 left)
+[t=0145] REQ#17 arrives at floor 4 → 5 (UP)
+[t=0145] Doors open at floor 6 (dwell 0 left)
+[t=0146] Move 6 → 5 (DOWN)
+[t=0147] Move 5 → 4 (DOWN)
+[t=0148] Boarded at floor 4: #13 (dir DOWN)
+[t=0149] Doors open at floor 4 (dwell 1 left)
+[t=0150] Doors open at floor 4 (dwell 0 left)
+[t=0151] Move 4 → 3 (DOWN)
+[t=0152] Drop-off complete at floor 3 for #12,#13
+[t=0153] Doors open at floor 3 (dwell 1 left)
+[t=0154] REQ#18 arrives at floor 5 → 8 (UP)
+[t=0154] Doors open at floor 3 (dwell 0 left)
+[t=0155] Reverse direction → UP
+[t=0155] Move 3 → 4 (UP)
+[t=0156] Boarded at floor 4: #15,#17 (dir UP)
+[t=0157] Doors open at floor 4 (dwell 1 left)
+[t=0158] Doors open at floor 4 (dwell 0 left)
+[t=0159] Move 4 → 5 (UP)
+[t=0160] Drop-off complete at floor 5 for #17
+[t=0160] Boarded at floor 5: #18 (dir UP)
+[t=0161] Doors open at floor 5 (dwell 1 left)
+[t=0162] Doors open at floor 5 (dwell 0 left)
+[t=0163] Move 5 → 6 (UP)
+[t=0164] REQ#19 arrives at floor 5 → 8 (UP)
+[t=0164] Drop-off complete at floor 6 for #15
+[t=0165] Doors open at floor 6 (dwell 1 left)
+[t=0166] Doors open at floor 6 (dwell 0 left)
+[t=0167] Move 6 → 7 (UP)
+[t=0168] Boarded at floor 7: #16 (dir UP)
+[t=0169] Doors open at floor 7 (dwell 1 left)
+[t=0170] Doors open at floor 7 (dwell 0 left)
+[t=0171] Move 7 → 8 (UP)
+[t=0172] REQ#20 arrives at floor 10 → 1 (DOWN)
+[t=0172] Drop-off complete at floor 8 for #18,#16
+[t=0173] Doors open at floor 8 (dwell 1 left)
+[t=0174] Doors open at floor 8 (dwell 0 left)
+[t=0175] Reverse direction → DOWN
+[t=0175] Move 8 → 7 (DOWN)
+[t=0176] Reverse direction → UP
+[t=0176] Move 7 → 8 (UP)
+[t=0177] Reverse direction → DOWN
+[t=0177] Move 8 → 7 (DOWN)
+[t=0178] Reverse direction → UP
+[t=0178] Move 7 → 8 (UP)
+[t=0179] Reverse direction → DOWN
+[t=0179] Move 8 → 7 (DOWN)
+[t=0180] Reverse direction → UP
+[t=0180] Move 7 → 8 (UP)
+[t=0181] Reverse direction → DOWN
+[t=0181] Move 8 → 7 (DOWN)
+[t=0182] Reverse direction → UP
+[t=0182] Move 7 → 8 (UP)
+[t=0183] Reverse direction → DOWN
+[t=0183] Move 8 → 7 (DOWN)
+[t=0184] Reverse direction → UP
+[t=0184] Move 7 → 8 (UP)
+[t=0185] Reverse direction → DOWN
+[t=0185] Move 8 → 7 (DOWN)
+[t=0186] Reverse direction → UP
+[t=0186] Move 7 → 8 (UP)
+[t=0187] Reverse direction → DOWN
+[t=0187] Move 8 → 7 (DOWN)
+[t=0188] Reverse direction → UP
+[t=0188] Move 7 → 8 (UP)
+[t=0189] Reverse direction → DOWN
+[t=0189] Move 8 → 7 (DOWN)
+[t=0190] Reverse direction → UP
+[t=0190] Move 7 → 8 (UP)
+[t=0191] Reverse direction → DOWN
+[t=0191] Move 8 → 7 (DOWN)
+[t=0192] Reverse direction → UP
+[t=0192] Move 7 → 8 (UP)
+[t=0193] Reverse direction → DOWN
+[t=0193] Move 8 → 7 (DOWN)
+[t=0194] Reverse direction → UP
+[t=0194] Move 7 → 8 (UP)
+[t=0195] Reverse direction → DOWN
+[t=0195] Move 8 → 7 (DOWN)
+[t=0196] Reverse direction → UP
+[t=0196] Move 7 → 8 (UP)
+[t=0197] Reverse direction → DOWN
+[t=0197] Move 8 → 7 (DOWN)
+[t=0198] REQ#21 arrives at floor 2 → 8 (UP)
+[t=0198] Reverse direction → UP
+[t=0198] Move 7 → 8 (UP)
+[t=0199] REQ#22 arrives at floor 3 → 2 (DOWN)
+[t=0199] Reverse direction → DOWN
+[t=0199] Move 8 → 7 (DOWN)
+[t=0200] Move 7 → 6 (DOWN)
+[t=0201] Move 6 → 5 (DOWN)
+[t=0202] Move 5 → 4 (DOWN)
+[t=0203] REQ#23 arrives at floor 5 → 4 (DOWN)
+[t=0203] Move 4 → 3 (DOWN)
+[t=0204] Boarded at floor 3: #22 (dir DOWN)
+[t=0205] Doors open at floor 3 (dwell 1 left)
+[t=0206] Doors open at floor 3 (dwell 0 left)
+[t=0207] Move 3 → 2 (DOWN)
+[t=0208] Drop-off complete at floor 2 for #22
+[t=0209] Doors open at floor 2 (dwell 1 left)
+[t=0210] REQ#24 arrives at floor 5 → 9 (UP)
+[t=0210] Doors open at floor 2 (dwell 0 left)
+[t=0211] Reverse direction → UP
+[t=0211] Move 2 → 3 (UP)
+[t=0212] Move 3 → 4 (UP)
+[t=0213] Move 4 → 5 (UP)
+[t=0214] Boarded at floor 5: #19,#24 (dir UP)
+[t=0215] Doors open at floor 5 (dwell 1 left)
+[t=0216] Doors open at floor 5 (dwell 0 left)
+[t=0217] Move 5 → 6 (UP)
+[t=0218] Move 6 → 7 (UP)
+[t=0219] Move 7 → 8 (UP)
+[t=0220] Drop-off complete at floor 8 for #19
+[t=0221] Doors open at floor 8 (dwell 1 left)
+[t=0222] Doors open at floor 8 (dwell 0 left)
+[t=0223] Move 8 → 9 (UP)
+[t=0224] Drop-off complete at floor 9 for #24
+[t=0225] Doors open at floor 9 (dwell 1 left)
+[t=0226] Doors open at floor 9 (dwell 0 left)
+[t=0227] Reverse direction → DOWN
+[t=0227] Move 9 → 8 (DOWN)
+[t=0228] REQ#25 arrives at floor 8 → 6 (DOWN)
+[t=0228] Boarded at floor 8: #25 (dir DOWN)
+[t=0229] Doors open at floor 8 (dwell 1 left)
+[t=0230] REQ#26 arrives at floor 9 → 6 (DOWN)
+[t=0230] Doors open at floor 8 (dwell 0 left)
+[t=0231] Move 8 → 7 (DOWN)
+[t=0232] Move 7 → 6 (DOWN)
+[t=0233] Drop-off complete at floor 6 for #25
+[t=0234] Doors open at floor 6 (dwell 1 left)
+[t=0235] Doors open at floor 6 (dwell 0 left)
+[t=0236] Move 6 → 5 (DOWN)
+[t=0237] REQ#27 arrives at floor 8 → 4 (DOWN)
+[t=0237] Boarded at floor 5: #23 (dir DOWN)
+[t=0238] Doors open at floor 5 (dwell 1 left)
+[t=0239] Doors open at floor 5 (dwell 0 left)
+[t=0240] Move 5 → 4 (DOWN)
+[t=0241] REQ#28 arrives at floor 4 → 3 (DOWN)
+[t=0241] Drop-off complete at floor 4 for #23
+[t=0241] Boarded at floor 4: #28 (dir DOWN)
+[t=0242] Doors open at floor 4 (dwell 1 left)
+[t=0243] Doors open at floor 4 (dwell 0 left)
+[t=0244] Move 4 → 3 (DOWN)
+[t=0245] Drop-off complete at floor 3 for #28
+[t=0246] Doors open at floor 3 (dwell 1 left)
+[t=0247] REQ#29 arrives at floor 7 → 9 (UP)
+[t=0247] Doors open at floor 3 (dwell 0 left)
+[t=0248] Reverse direction → UP
+[t=0248] Move 3 → 4 (UP)
+[t=0249] Move 4 → 5 (UP)
+[t=0250] Move 5 → 6 (UP)
+[t=0251] REQ#30 arrives at floor 7 → 2 (DOWN)
+[t=0251] Move 6 → 7 (UP)
+[t=0252] Boarded at floor 7: #29 (dir UP)
+[t=0253] Doors open at floor 7 (dwell 1 left)
+[t=0254] Doors open at floor 7 (dwell 0 left)
+[t=0255] Move 7 → 8 (UP)
+[t=0256] Move 8 → 9 (UP)
+[t=0257] Drop-off complete at floor 9 for #29
+[t=0258] Doors open at floor 9 (dwell 1 left)
+[t=0259] Doors open at floor 9 (dwell 0 left)
+[t=0260] Reverse direction → DOWN
+[t=0260] Move 9 → 8 (DOWN)
+[t=0261] Boarded at floor 8: #27 (dir DOWN)
+[t=0262] Doors open at floor 8 (dwell 1 left)
+[t=0263] Doors open at floor 8 (dwell 0 left)
+[t=0264] Move 8 → 7 (DOWN)
+[t=0265] Boarded at floor 7: #30 (dir DOWN)
+[t=0266] Doors open at floor 7 (dwell 1 left)
+[t=0267] Doors open at floor 7 (dwell 0 left)
+[t=0268] REQ#31 arrives at floor 5 → 1 (DOWN)
+[t=0268] Move 7 → 6 (DOWN)
+[t=0269] Move 6 → 5 (DOWN)
+[t=0270] REQ#32 arrives at floor 3 → 1 (DOWN)
+[t=0270] Boarded at floor 5: #31 (dir DOWN)
+[t=0271] Doors open at floor 5 (dwell 1 left)
+[t=0272] Doors open at floor 5 (dwell 0 left)
+[t=0273] Move 5 → 4 (DOWN)
+[t=0274] Drop-off complete at floor 4 for #27
+[t=0275] Doors open at floor 4 (dwell 1 left)
+[t=0276] Doors open at floor 4 (dwell 0 left)
+[t=0277] Move 4 → 3 (DOWN)
+[t=0278] Boarded at floor 3: #32 (dir DOWN)
+[t=0279] Doors open at floor 3 (dwell 1 left)
+[t=0280] Doors open at floor 3 (dwell 0 left)
+[t=0281] Move 3 → 2 (DOWN)
+[t=0282] Drop-off complete at floor 2 for #30
+[t=0283] Doors open at floor 2 (dwell 1 left)
+[t=0284] Doors open at floor 2 (dwell 0 left)
+[t=0285] Move 2 → 1 (DOWN)
+[t=0286] Drop-off complete at floor 1 for #31,#32
+[t=0287] Doors open at floor 1 (dwell 1 left)
+[t=0288] Doors open at floor 1 (dwell 0 left)
+[t=0289] Reverse direction → UP
+[t=0289] Move 1 → 2 (UP)
+[t=0290] Boarded at floor 2: #8,#21 (dir UP)
+[t=0291] Doors open at floor 2 (dwell 1 left)
+[t=0292] Doors open at floor 2 (dwell 0 left)
+[t=0293] Move 2 → 3 (UP)
+[t=0294] Drop-off complete at floor 3 for #8
+[t=0295] Doors open at floor 3 (dwell 1 left)
+[t=0296] Doors open at floor 3 (dwell 0 left)
+[t=0297] Move 3 → 4 (UP)
+[t=0298] Move 4 → 5 (UP)
+[t=0299] Move 5 → 6 (UP)
+[t=0300] Move 6 → 7 (UP)
+
+=== SUMMARY ===
+Floors: 10, ticks: 300, dwell: 2, λ: 0.15, seed: 42
+Requests: total=32 done=27 avg_wait=22.67 avg_ride=7.33 avg_total=30.00
+Wait p50=11.0 p90=40.4
+Ride p50=5.0 p90=14.2
+~ $ cat elev1.py
+# file: elevator_scan_demo.py
+from __future__ import annotations
+
+import argparse
+import random
+from dataclasses import dataclass, field
+from enum import Enum
+from typing import List, Optional, Tuple, Iterable, Dict
+
+
+class Dir(int, Enum):
+    DOWN = -1
+    IDLE = 0
+    UP = 1
+
+
+class Status(str, Enum):
+    WAITING = "WAITING"
+    ONBOARD = "ONBOARD"
+    DONE = "DONE"
+
+
+@dataclass
+class Request:
+    rid: int
+    t_request: int
+    src: int
+    dst: int
+    status: Status = Status.WAITING
+    t_board: Optional[int] = None
+    t_drop: Optional[int] = None
+
+    @property
+    def desired_dir(self) -> Dir:
+        if self.dst > self.src:
+            return Dir.UP
+        if self.dst < self.src:
+            return Dir.DOWN
+        return Dir.IDLE  # pathological; ignored
+
+
+@dataclass
+class Elevator:
+    floors: int
+    current: int = 1
+    direction: Dir = Dir.IDLE
+    door_timer: int = 0  # ticks remaining with doors open
+    onboard: List[Request] = field(default_factory=list)
+
+    def in_bounds(self, floor: int) -> bool:
+        return 1 <= floor <= self.floors
+
+    def set_direction_towards(self, target_floor: int) -> None:
+        # Why: establish a consistent direction from IDLE or after clearing a sweep
+        if target_floor > self.current:
+            self.direction = Dir.UP
+        elif target_floor < self.current:
+            self.direction = Dir.DOWN
+        else:
+            self.direction = Dir.IDLE
+
+    def move_one_tick(self) -> None:
+        if self.direction == Dir.UP:
+            self.current = min(self.floors, self.current + 1)
+        elif self.direction == Dir.DOWN:
+            self.current = max(1, self.current - 1)
+        # if IDLE, stay
+
+
+class EventLog:
+    def __init__(self, verbose: bool) -> None:
+        self.verbose = verbose
+
+    def log(self, t: int, msg: str) -> None:
+        if self.verbose:
+            print(f"[t={t:04d}] {msg}")
+
+
+def next_targets_in_direction(
+    elev: Elevator,
+    waiting: Iterable[Request],
+    direction: Dir,
+) -> List[int]:
+    """
+    Compute unique target floors in the given direction from:
+      - waiting pickups whose desired direction == direction
+      - onboard drop-offs
+    Ordered to implement SCAN: ascending for UP, descending for DOWN.
+    """
+    cur = elev.current
+    up = set()
+    down = set()
+
+    # Onboard drop-offs
+    for r in elev.onboard:
+        if r.dst > cur:
+            up.add(r.dst)
+        elif r.dst < cur:
+            down.add(r.dst)
+
+    # Waiting pickups (only halls that want this direction)
+    for r in waiting:
+        if r.status != Status.WAITING:
+            continue
+        if r.desired_dir == Dir.UP and r.src > cur:
+            up.add(r.src)
+        elif r.desired_dir == Dir.DOWN and r.src < cur:
+            down.add(r.src)
+
+    if direction == Dir.UP:
+        return sorted(up)
+    if direction == Dir.DOWN:
+        return sorted(down, reverse=True)
+    return []
+
+
+def any_targets(elev: Elevator, waiting: Iterable[Request]) -> bool:
+    if elev.onboard:
+        return True
+    for r in waiting:
+        if r.status == Status.WAITING:
+            return True
+    return False
+
+
+def nearest_target_floor(elev: Elevator, waiting: Iterable[Request]) -> Optional[int]:
+    """When idle, pick the nearest source or destination."""
+    candidates: List[int] = []
+    for r in waiting:
+        if r.status == Status.WAITING:
+            candidates.append(r.src)
+    for r in elev.onboard:
+        candidates.append(r.dst)
+    if not candidates:
+        return None
+    cur = elev.current
+    # Tie-break upward to avoid dithering
+    best = min(candidates, key=lambda f: (abs(f - cur), -f))
+    return best
+
+
+def run_sim(
+    floors: int,
+    ticks: int,
+    dwell: int,
+    speed_floors_per_tick: int,
+    new_requests: List[Request],
+    stop_when_done: bool,
+    verbose: bool,
+) -> Tuple[List[Request], Dict[str, float]]:
+    assert speed_floors_per_tick == 1, "This demo assumes 1 floor/tick for clarity."
+    elev = Elevator(floors=floors, current=1, direction=Dir.IDLE, door_timer=0)
+    waiting: List[Request] = []
+    req_by_time: Dict[int, List[Request]] = {}
+    for r in new_requests:
+        req_by_time.setdefault(r.t_request, []).append(r)
+
+    log = EventLog(verbose)
+
+    for t in range(ticks + 1):
+        # Inject arrivals
+        for r in req_by_time.get(t, []):
+            waiting.append(r)
+            log.log(t, f"REQ#{r.rid} arrives at floor {r.src} → {r.dst} ({r.desired_dir.name})")
+
+        # If all done and stop_when_done: break early
+        if stop_when_done and not any_targets(elev, waiting):
+            log.log(t, "No pending targets. Simulation ends early.")
+            break
+
+        # Door dwell handling
+        if elev.door_timer > 0:
+            elev.door_timer -= 1
+            log.log(t, f"Doors open at floor {elev.current} (dwell {elev.door_timer} left)")
+            continue
+
+        # Arrivals/Departures at current floor
+        dropped = [r for r in elev.onboard if r.dst == elev.current]
+        for r in dropped:
+            r.status = Status.DONE
+            r.t_drop = t
+            elev.onboard.remove(r)
+        boarded = []
+        # Board only those whose src == current and whose desired direction matches the sweep.
+        # If IDLE, we can decide direction opportunistically from first candidate.
+        floor_waiters = [r for r in waiting if r.src == elev.current and r.status == Status.WAITING]
+        if floor_waiters:
+            if elev.direction == Dir.IDLE:
+                # Choose direction that serves the majority (tie → up)
+                up_count = sum(1 for r in floor_waiters if r.desired_dir == Dir.UP)
+                down_count = sum(1 for r in floor_waiters if r.desired_dir == Dir.DOWN)
+                elev.direction = Dir.UP if up_count >= down_count else Dir.DOWN
+
+            for r in list(floor_waiters):
+                if r.desired_dir == elev.direction:
+                    r.status = Status.ONBOARD
+                    r.t_board = t
+                    elev.onboard.append(r)
+                    waiting.remove(r)
+                    boarded.append(r)
+
+        if dropped or boarded:
+            if dropped:
+                ids = ",".join(f"#{r.rid}" for r in dropped)
+                log.log(t, f"Drop-off complete at floor {elev.current} for {ids}")
+            if boarded:
+                ids = ",".join(f"#{r.rid}" for r in boarded)
+                log.log(t, f"Boarded at floor {elev.current}: {ids} (dir {elev.direction.name})")
+            elev.door_timer = dwell
+            continue  # spend dwell time next ticks
+
+        # Decide direction / move step
+        targets = next_targets_in_direction(elev, waiting, elev.direction)
+        if elev.direction == Dir.IDLE:
+            # Idle: pick nearest target and set direction
+            target = nearest_target_floor(elev, waiting)
+            if target is not None:
+                elev.set_direction_towards(target)
+                log.log(t, f"IDLE→{elev.direction.name}; heading toward floor {target}")
+            else:
+                log.log(t, "IDLE; no targets")
+        else:
+            if not targets:
+                # Nothing ahead → reverse if there exist any targets overall
+                if any_targets(elev, waiting):
+                    elev.direction = Dir.UP if elev.direction == Dir.DOWN else Dir.DOWN
+                    log.log(t, f"Reverse direction → {elev.direction.name}")
+                else:
+                    elev.direction = Dir.IDLE
+                    log.log(t, "No targets; going IDLE")
+
+        # Move one floor if we have a direction
+        if elev.direction != Dir.IDLE:
+            prev = elev.current
+            elev.move_one_tick()
+            log.log(t, f"Move {prev} → {elev.current} ({elev.direction.name})")
+
+    # Stats
+    finished = [r for r in new_requests if r.status == Status.DONE]
+    avg_wait = sum((r.t_board - r.t_request) for r in finished) / len(finished) if finished else 0.0
+    avg_ride = sum((r.t_drop - r.t_board) for r in finished) / len(finished) if finished else 0.0
+    avg_total = sum((r.t_drop - r.t_request) for r in finished) / len(finished) if finished else 0.0
+    stats = {
+        "requests_total": len(new_requests),
+        "requests_done": len(finished),
+        "avg_wait": avg_wait,
+        "avg_ride": avg_ride,
+        "avg_total": avg_total,
+        "last_time": t if ticks >= 0 else 0,
+    }
+    return new_requests, stats
+
+
+def generate_poisson_requests(
+    floors: int,
+    ticks: int,
+    rate_per_tick: float,
+    seed: Optional[int],
+) -> List[Request]:
+    # Why: poisson arrivals are a standard, simple traffic model
+    rng = random.Random(seed)
+    reqs: List[Request] = []
+    rid = 1
+    for t in range(ticks + 1):
+        # Poisson(λ) via counting Bernoulli with small λ, adequate for demo
+        num = sum(1 for _ in range(4) if rng.random() < rate_per_tick / 4.0)  # approx Poisson
+        for _ in range(num):
+            src = rng.randint(1, floors)
+            dst = rng.randint(1, floors)
+            while dst == src:
+                dst = rng.randint(1, floors)
+            reqs.append(Request(rid=rid, t_request=t, src=src, dst=dst))
+            rid += 1
+    return reqs
+
+
+def main() -> None:
+    p = argparse.ArgumentParser(
+        description="Knuth-style Elevator (SCAN) Algorithm Demo: single car, hall calls + car calls synthesized."
+    )
+    p.add_argument("--floors", type=int, default=10, help="Number of floors [1..N]")
+    p.add_argument("--ticks", type=int, default=300, help="Total simulation ticks")
+    p.add_argument("--dwell", type=int, default=2, help="Door dwell ticks when boarding/dropping")
+    p.add_argument("--speed", type=int, default=1, help="Floors per tick (fixed to 1 in this demo)")
+    p.add_argument("--lambda", dest="lam", type=float, default=0.15, help="Avg requests per tick (Poisson-ish)")
+    p.add_argument("--seed", type=int, default=42, help="Random seed")
+    p.add_argument("--stop-when-done", action="store_true", help="Stop early when queue becomes empty")
+    p.add_argument("--quiet", action="store_true", help="Suppress per-tick logs")
+    p.add_argument("--no-random", action="store_true", help="Use a fixed small scenario instead of random arrivals")
+    args = p.parse_args()
+
+    if args.no_random:
+        # A tiny deterministic scenario
+        demo: List[Request] = [
+            Request(1, 0, 1, 7),
+            Request(2, 3, 3, 9),
+            Request(3, 5, 9, 2),
+            Request(4, 12, 4, 6),
+            Request(5, 15, 8, 1),
+        ]
+    else:
+        demo = generate_poisson_requests(args.floors, args.ticks, args.lam, args.seed)
+
+    all_reqs, stats = run_sim(
+        floors=args.floors,
+        ticks=args.ticks,
+        dwell=args.dwell,
+        speed_floors_per_tick=args.speed,
+        new_requests=demo,
+        stop_when_done=args.stop_when_done,
+        verbose=not args.quiet,
+    )
+
+    # Summary
+    done = [r for r in all_reqs if r.status == Status.DONE]
+    print("\n=== SUMMARY ===")
+    print(f"Floors: {args.floors}, ticks: {args.ticks}, dwell: {args.dwell}, λ: {args.lam}, seed: {args.seed}")
+    print(
+        f"Requests: total={stats['requests_total']} done={stats['requests_done']} "
+        f"avg_wait={stats['avg_wait']:.2f} avg_ride={stats['avg_ride']:.2f} avg_total={stats['avg_total']:.2f}"
+    )
+    # Distribution samples
+    if done:
+        waits = sorted((r.t_board - r.t_request) for r in done)
+        rides = sorted((r.t_drop - r.t_board) for r in done)
+        print(f"Wait p50={percentile(waits, 50):.1f} p90={percentile(waits, 90):.1f}")
+        print(f"Ride p50={percentile(rides, 50):.1f} p90={percentile(rides, 90):.1f}")
+
+
+def percentile(sorted_values: List[int], pctl: float) -> float:
+    if not sorted_values:
+        return 0.0
+    n = len(sorted_values)
+    k = (pctl / 100.0) * (n - 1)
+    f = int(k)
+    c = min(f + 1, n - 1)
+    if f == c:
+        return float(sorted_values[f])
+    return sorted_values[f] + (sorted_values[c] - sorted_values[f]) * (k - f)
+
+
+if __name__ == "__main__":
+    main()
+~ $
